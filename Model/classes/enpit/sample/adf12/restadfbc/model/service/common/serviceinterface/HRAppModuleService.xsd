@@ -1,0 +1,149 @@
+<schema xmlns="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="/enpit/sample/adf12/restadfbc/model/service/common/types/"
+     xmlns:tns="/enpit/sample/adf12/restadfbc/model/service/common/types/" xmlns:ns0="/enpit/sample/adf12/restadfbc/model/query/common/"
+     xmlns:ns1="http://xmlns.oracle.com/adf/svc/types/">
+    <import namespace="http://xmlns.oracle.com/adf/svc/types/" schemaLocation="classpath:/META-INF/wsdl/BC4JService.xsd"/>
+    <import namespace="/enpit/sample/adf12/restadfbc/model/query/common/" schemaLocation="../../../query/common/EmployeesViewSDO.xsd"/>
+    <import namespace="/enpit/sample/adf12/restadfbc/model/query/common/" schemaLocation="../../../query/common/DepartmentsViewSDO.xsd"/>
+    <element name="createDepartmentsView1">
+        <complexType>
+            <sequence>
+                <element name="departmentsView1" type="ns0:DepartmentsViewSDO"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="createDepartmentsView1Response">
+        <complexType>
+            <sequence>
+                <element name="result" type="ns0:DepartmentsViewSDO"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="updateDepartmentsView1">
+        <complexType>
+            <sequence>
+                <element name="departmentsView1" type="ns0:DepartmentsViewSDO"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="updateDepartmentsView1Response">
+        <complexType>
+            <sequence>
+                <element name="result" type="ns0:DepartmentsViewSDO"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="mergeDepartmentsView1">
+        <complexType>
+            <sequence>
+                <element name="departmentsView1" type="ns0:DepartmentsViewSDO"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="mergeDepartmentsView1Response">
+        <complexType>
+            <sequence>
+                <element name="result" type="ns0:DepartmentsViewSDO"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="getEmployeesView1">
+        <complexType>
+            <sequence>
+                <element name="employeeId" type="int"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="getEmployeesView1Response">
+        <complexType>
+            <sequence>
+                <element name="result" type="ns0:EmployeesViewSDO"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="updateEmployeesView1">
+        <complexType>
+            <sequence>
+                <element name="employeesView1" type="ns0:EmployeesViewSDO"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="updateEmployeesView1Response">
+        <complexType>
+            <sequence>
+                <element name="result" type="ns0:EmployeesViewSDO"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="getDepartmentsView1">
+        <complexType>
+            <sequence>
+                <element name="departmentId" type="int"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="getDepartmentsView1Response">
+        <complexType>
+            <sequence>
+                <element name="result" type="ns0:DepartmentsViewSDO"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="findDepartmentsView1">
+        <complexType>
+            <sequence>
+                <element name="findCriteria" type="ns1:FindCriteria"/>
+                <element name="findControl" type="ns1:FindControl"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="findDepartmentsView1Response">
+        <complexType>
+            <sequence>
+                <element name="result" type="ns0:DepartmentsViewSDO" minOccurs="0" maxOccurs="unbounded"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="createEmployeesView1">
+        <complexType>
+            <sequence>
+                <element name="employeesView1" type="ns0:EmployeesViewSDO"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="createEmployeesView1Response">
+        <complexType>
+            <sequence>
+                <element name="result" type="ns0:EmployeesViewSDO"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="mergeEmployeesView1">
+        <complexType>
+            <sequence>
+                <element name="employeesView1" type="ns0:EmployeesViewSDO"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="mergeEmployeesView1Response">
+        <complexType>
+            <sequence>
+                <element name="result" type="ns0:EmployeesViewSDO"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="findEmployeesView1">
+        <complexType>
+            <sequence>
+                <element name="findCriteria" type="ns1:FindCriteria"/>
+                <element name="findControl" type="ns1:FindControl"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="findEmployeesView1Response">
+        <complexType>
+            <sequence>
+                <element name="result" type="ns0:EmployeesViewSDO" minOccurs="0" maxOccurs="unbounded"/>
+            </sequence>
+        </complexType>
+    </element>
+</schema>

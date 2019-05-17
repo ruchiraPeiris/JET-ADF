@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BC4JConfig version="11.1" xmlns="http://xmlns.oracle.com/bc4j/configuration">
+   <AppModuleConfigBag ApplicationName="enpit.sample.adf12.restadfbc.model.service.HRAppModule">
+      <AppModuleConfig name="HRAppModuleLocal" jbo.project="enpit.sample.adf12.restadfbc.model.Model" ApplicationName="enpit.sample.adf12.restadfbc.model.service.HRAppModule" DeployPlatform="LOCAL">
+         <Database jbo.TypeMapEntries="OracleApps"/>
+         <Security AppModuleJndiName="enpit.sample.adf12.restadfbc.model.service.HRAppModule"/>
+         <Custom ns0:JDBCDataSource="java:comp/env/jdbc/hrconn@localDS" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="HRAppModuleShared" jbo.project="enpit.sample.adf12.restadfbc.model.Model" ApplicationName="enpit.sample.adf12.restadfbc.model.service.HRAppModule" DeployPlatform="LOCAL">
+         <AM-Pooling jbo.ampool.maxpoolsize="1" jbo.ampool.isuseexclusive="false"/>
+         <Database jbo.TypeMapEntries="OracleApps"/>
+         <Security AppModuleJndiName="enpit.sample.adf12.restadfbc.model.service.HRAppModule"/>
+         <Custom ns0:JDBCDataSource="java:comp/env/jdbc/hrconn@localDS" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="HRAppModuleService" jbo.project="enpit.sample.adf12.restadfbc.model.Model" ApplicationName="enpit.sample.adf12.restadfbc.model.service.HRAppModule" DeployPlatform="SI">
+         <AM-Pooling jbo.ampool.resetnontransactionalstate="true"/>
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps"/>
+         <Security AppModuleJndiName="enpit.sample.adf12.restadfbc.model.service.HRAppModule"/>
+         <Custom ns0:JDBCDataSource="java:comp/env/jdbc/hrconn@localDS" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+</BC4JConfig>
